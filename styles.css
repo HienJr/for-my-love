@@ -62,19 +62,19 @@ body {
     border-radius: 10px;
 }
 
-.container:active .content {
+
+/* .container:hover .content {
     border-top: 100px solid transparent;
 }
 
-.container:active .card {
-    /* top: -50%; */
+.container:hover .card {
     transform: translate(-50%, -50%);
 }
 
-.container:not(:active) .card {
+.container:not(:hover) .card {
     visibility: hidden;
 }
 
-.container:active .open {
+.container:hover .open {
     visibility: visible;
-}
+} */

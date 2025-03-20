@@ -14,5 +14,24 @@
                 <div class="card"><h2>i love you</h2></div>
             </div>
         </div>
+        <script>
+            const $ = document.querySelector.bind(document);
+            const content = $(".content");
+            const open = $(".open");
+            const card = $(".card");
+
+            content.onmouseover = () => {
+                content.style.borderTop = "100px solid transparent";
+                open.style.visibility = "visible";
+                card.style.transform = "translate(-50%, -50%)";
+                card.style.visibility = "visible";
+            };
+            content.onmouseout = () => {
+                content.style.borderTop = "";
+                card.style.transform = "";
+                card.style.visibility = "hidden";
+                open.style.visibility = "";
+            };
+        </script>
     </body>
 </html>
