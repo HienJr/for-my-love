@@ -17,7 +17,7 @@ body {
 
 .container {
     position: relative;
-    width: 400px;
+    max-width: 400px;
     height: 200px;
     background-color: #fff;
     border-radius: 0 0 10px;
@@ -62,19 +62,19 @@ body {
     border-radius: 10px;
 }
 
-.container:hover .content {
+.container:visited .content {
     border-top: 100px solid transparent;
 }
 
-.container:hover .card {
+.container:visited .card {
     /* top: -50%; */
     transform: translate(-50%, -50%);
 }
 
-.container:not(:hover) .card {
+.container:not(:visited) .card {
     visibility: hidden;
 }
 
-.container:hover .open {
+.container:visited .open {
     visibility: visible;
 }
