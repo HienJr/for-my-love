@@ -22,7 +22,7 @@ content.onclick = () => {
     heart3.style.animation = "heart3 infinite 6s .2s";
     heart4.style.animation = "heart4 infinite 6s .5s";
     heart5.style.animation = "heart5 infinite 6s .4s";
-    heart5.style.animation = "heart5 infinite 6s .6s";
+    heart6.style.animation = "heart6 infinite 6s .6s";
     heart7.style.animation = "heart7 infinite 6s .5s";
     heart8.style.animation = "heart8 infinite 6s .3s";
     heart9.style.animation = "heart9 infinite 6s .2s";
