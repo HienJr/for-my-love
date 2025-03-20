@@ -9,6 +9,7 @@ body {
 
 .wrap {
     display: flex;
+    flex-direction: column;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -17,10 +18,10 @@ body {
 
 .container {
     position: relative;
-    max-width: 400px;
+    width: 400px;
     height: 200px;
     background-color: #fff;
-    border-radius: 0 0 10px;
+    border-radius: 0 0 10px 10px;
     user-select: none;
 }
 
@@ -55,11 +56,149 @@ body {
     align-items: center;
     transform: translateX(-50%);
     transition: transform;
-    transition-duration: .3s;
+    transition-duration: .8s;
     width: 360px;
     height: 200px;
-    background-color: red;
+    background-color: rgba(253, 11, 11, 0.7);
     border-radius: 10px;
+}
+
+
+.heart {
+    position: relative;
+    top: -100%;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    rotate: 135deg;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.heart::before {
+    top: 50%;
+}
+
+.heart::after {
+    right: 50%;
+}
+
+/* .heart-1 {
+    animation: heart1 infinite 6s;
+}
+
+.heart-2 {
+    animation: heart2 infinite 6s;
+}
+
+.heart-3 {
+    top: 0;
+    animation: heart3 infinite 6s;
+} */
+
+.heart-4 {
+    animation: heart4 infinite 6s;
+}
+
+.heart-5 {
+    animation: heart5 infinite 6s;
+}
+
+.heart-6 {
+    animation: heart6 infinite 6s;
+}
+
+.heart-7 {
+    animation: heart7 infinite 6s;
+}
+
+.heart-8 {
+    animation: heart8 infinite 6s;
+}
+
+.heart-9 {
+    animation: heart9 infinite 6s;
+}
+
+@keyframes heart1 {
+    0% {
+        top: -20px;
+    }
+
+    100% {
+        top: -600px;
+    }
+}
+
+@keyframes heart2 {
+    0% {
+        top: -40px;
+        left: 50px;
+    }
+
+    25% {
+        left: -80px;
+    }
+
+    100% {
+        top: -600px;
+        left: 60px;
+    }
+}
+
+@keyframes heart3 {
+    0% {
+        top: -42px;
+        right: -50px;
+    }
+
+    25% {
+        right: -90px;
+    }
+
+    100% {
+        top: -600px;
+        right: 60px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        width: 200px;
+        height: 100px;
+    }
+
+    .content {
+        border-top: 50px solid rgb(247, 181, 192);
+        border-right: 100px solid rgb(238, 82, 108);
+        border-bottom: 50px solid rgb(238, 82, 108);
+        border-left: 100px solid rgb(238, 82, 108);
+    }
+
+    .open {
+        top: -100px;
+        border-bottom: 50px solid rgb(247, 181, 192);
+        border-top: 50px solid transparent;
+        border-right: 100px solid transparent;
+        border-left: 100px solid transparent;
+    }
+
+    .card {
+        width: 180px;
+        height: 90px;
+    }
 }
 
 
