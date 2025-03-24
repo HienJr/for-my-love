@@ -257,7 +257,7 @@ h2 {
     }
   }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .container {
     width: 200px;
     height: 100px;
